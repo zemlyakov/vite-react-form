@@ -1,10 +1,12 @@
+import SidebarHeader from "./SidebarHeader.jsx";
 import SidebarButton from "./SidebarButton";
 import FileNew from "../icons/FileNew";
 import Blur from "../icons/Blur.jsx";
-
-import noiseBgUrl from "../../assets/noise-fg.png";
 import Contact from "../icons/Contact.jsx";
 import User from "../icons/User.jsx";
+
+import noiseBgUrl from "../../assets/noise-fg.png";
+import SidebarButtonAnnotation from "./SidebarButtonAnnotation.jsx";
 
 export default function Sidebar() {
   return (
@@ -16,7 +18,7 @@ export default function Sidebar() {
       }}>
         <Blur className="w-[250px]] h-[335px] absolute top-[-34px] left-[-9px] pointer-events-none"/>
         <div>
-          <h6 className="text-lg font-semibold text-white">Smart Advisor</h6>
+          <SidebarHeader />
           <ul className="mt-14 space-y-2 font-medium">
             <li>
               <SidebarButton icon={<FileNew className="w-3.5 h-[1.125]"/>} text="New scenario"/>
@@ -30,7 +32,7 @@ export default function Sidebar() {
             </li>
             <li>
               <SidebarButton icon={<User className="w-5 h-5"/>} text="Sign in" variant="bottom"/>
-              <small className="inline-block ml-[37px] text-sm text-white/80 leading-[150%]">Save your progress and keep all scenarios in one place</small>
+              <SidebarButtonAnnotation text="Save your progress and keep all scenarios in one place" />
             </li>
           </ul>
         </div>
