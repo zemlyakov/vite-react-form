@@ -4,9 +4,9 @@ import FileNew from "../icons/FileNew";
 import Blur from "../icons/Blur.jsx";
 import Contact from "../icons/Contact.jsx";
 import User from "../icons/User.jsx";
+import SidebarButtonAnnotation from "./SidebarButtonAnnotation.jsx";
 
 import noiseBgUrl from "../../assets/noise-fg.png";
-import SidebarButtonAnnotation from "./SidebarButtonAnnotation.jsx";
 
 export default function Sidebar() {
   return (
