@@ -1,6 +1,7 @@
 import Select from "../form/Select.jsx";
 import TextInput from "../form/TextInput.jsx";
 import Checkbox from "../form/Checkbox.jsx";
+import Alert from "./Alert.jsx";
 
 export default function BusinessLocationForm() {
   return (
@@ -14,6 +15,7 @@ export default function BusinessLocationForm() {
       <div className="py-2">
         <Checkbox id="is-shopping-mall-business" label="My business will be located in a shopping mall" />
       </div>
+      <Alert />
     </form>
   )
 }
