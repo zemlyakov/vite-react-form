@@ -3,7 +3,7 @@ import BusinessLocationForm from "./BusinessLocationForm.jsx";
 
 export default function Premise() {
   return (
-    <div className="px-10 py-8 space-y-8">
+    <div className="max-w-3xl mx-auto px-10 py-8 space-y-8">
       <QuestionnaireHeader/>
       <BusinessLocationForm />
     </div>
